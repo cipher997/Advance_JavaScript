@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title class="geek">Tree - Kartik Gaikwad codes</title>
+  </head>
+  <body>
+    <h1 id="myid" class="myclass">
+      We are Learning JS
+      <!-- This is Comment -->
+    </h1>
+    <p id="myid1">I am Paragraph</p>
+    <script>
+      // Attr
+      var result = document.getElementById("myid");
+      // document.write(result.attributes[0].nodeName + "<br>");   // Deprecated do not use it
+      // document.write(result.attributes[0].nodeValue + "<br>"); // Deprecated do not use it
+      // in DOM 4 Attr do not inherit Node so above statements will not work in future
+
+      // name and value properties only work with attributes
+      document.write(result.attributes[0].name + "<br>");
+      document.write(result.attributes[0].value + "<br>");
+      document.write(result.attributes[1].name + "<br>");
+      document.write(result.attributes[1].value + "<br>");
+    </script>
+  </body>
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
