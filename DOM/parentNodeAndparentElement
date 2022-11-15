@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html id="myid">
+  <head>
+    <title>Tree - Kartik Gaikwad codes</title>
+  </head>
+  <body>
+    <h1>
+      We are Learning JS
+      <!-- This is Comment -->
+    </h1>
+    <p id="myid1">I am Paragraph</p>
+    <script>
+      var result = document.getElementById("myid");
+      var result1 = document.getElementById("myid1");
+      // It will return the parent whether parent is element node or not
+      console.log(result.parentNode);
+      // It will return null if the parent is not an element
+      console.log(result.parentElement);
+
+      // Here both returns parent becoz both have parent element
+      console.log(result1.parentNode);
+      console.log(result1.parentElement);
+    </script>
+  </body>
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
