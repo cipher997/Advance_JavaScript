@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title class="geek">Tree - Kartik Gaikwad codes</title>
+  </head>
+  <body>
+    <h1>We are Learning JS</h1>
+    <h1 class="geek myclass">Subscribe Geekyshows</h1>
+    <h2>Now</h2>
+    <p class="geek">
+      Hello <span>Geekyshows</span> <em>World</em><span>Youtube</span>
+    </p>
+    <p class="myclass"><span>Bye</span> Geekyshows</p>
+    <div id="show">
+      <p>1st p inside div</p>
+      <p class="geek">2nd p <span class="myspan">inside</span> <em>div</em></p>
+    </div>
+    <p id="show1">I am Paragraph</p>
+    <div id="show2">I am Something Div</div>
+    <script>
+      // Loop
+      /*
+			var result = document.querySelectorAll(".geek")[0];
+			document.write(result);
+			console.log(result);         
+*/
+
+      var data = document.querySelectorAll(".geek");
+      var len = data.length;
+      for (let i = 0; i < len; i++) {
+        var result = document.querySelectorAll(".geek")[i];
+        document.write(result + "<br>");
+        console.log(result);
+      }
+
+      /*
+			// for of loop
+			var data = document.querySelectorAll(".geek");
+			for (const elm of data) {
+				document.write(elm + "<br>");
+				console.log(elm);        
+			}
+*/
+    </script>
+  </body>
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
