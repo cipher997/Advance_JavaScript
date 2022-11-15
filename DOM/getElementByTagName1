@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tree - Kartik Gaikwad codes</title>
+  </head>
+  <body>
+    <h1>We are Learning JS</h1>
+    <h1>Subscribe Kartik Gaikwad codes</h1>
+    <h2>Now</h2>
+    <p id="geek">Hello Kartik Gaikwad codes</p>
+    <p id="find">Bye Kartik Gaikwad codes</p>
+    <div>
+      <p>1st p inside div</p>
+      <p>2nd p inside div</p>
+    </div>
+
+    <script>
+      var result = document.getElementsByTagName("p");
+      document.write(result);
+      console.log(result);
+    </script>
+  </body>
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
