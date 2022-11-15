@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kartik Gaikwad codes</title>
+  </head>
+  <body>
+    <div id="myid">
+      <h1>We are Learning JavaScript</h1>
+      <h1>I am h1</h1>
+    </div>
+    <script>
+      // Creating New Element h2
+      var nENode = document.createElement("h2");
+
+      // Creating Text Node
+      var nTNode = document.createTextNode("Text Created by JavaScript");
+
+      // Creating New Comment Node
+      var nCNode = document.createComment("Comment from Javascript");
+
+      // First we will append New Text Node to New Element Node (h2)
+      nENode.appendChild(nTNode);
+
+      // Display what nENode have
+      console.log(nENode);
+
+      // Append New Comment Node to New Element Node (h2)
+      nENode.appendChild(nCNode);
+
+      // Display What nENode have Now
+      console.log(nENode);
+
+      // Targeting Element where we will append New Nodes
+      var targetNode = document.getElementById("myid");
+
+      // Now Append New Element h2 to div
+      targetNode.appendChild(nENode);
+
+      // Display What targetNode have
+      console.log(targetNode);
+    </script>
+  </body>
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
