@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kartik Gaikwad codes</title>
+  </head>
+
+  <body>
+    <h1 title="myheading">Heading 1</h1>
+    <img src="cat.jpg" alt="catimage" width="30%" height="20%" />
+    <img src="js.png" alt="jsimage" width="30%" height="20%" />
+    <div>
+      <ul id="myl">
+        <li class="game">Item 1</li>
+        <li class="supergame">Item 2</li>
+        <li class="game-super">Item 3</li>
+        <li class="gamesuper">Item 4</li>
+        <li class="super-game">Item 5</li>
+        <li class="game super">Item 6</li>
+        <li class="super game">Item 7</li>
+        <li class="super">Item 8</li>
+      </ul>
+      <!-- <ul id="mylist">
+			<li>Java</li>
+			<li>PHP</li>
+			<li>JS</li>
+			<li>NodeJs</li>
+			<li>Go</li>
+		</ul> -->
+    </div>
+    <p title="mypara1" class="red black">This is paragraph 1</p>
+    <p title="mypara2" class="red">This is paragraph 2</p>
+    <p title="mypara3" class="black">This is paragraph 3</p>
+    <p title="mypara4" id="book">This is paragraph 4</p>
+    <h3 class="red">Heading 3</h3>
+    <h4 id="book">Heading 3</h4>
+    <script>
+      // CSS Selector DOM
+      // Element Selector - specify tag name/Element Name
+      // syntax:- ('tag_name')
+      var list = document.querySelectorAll("p");
+      console.log(list);
+      console.log(list.length);
+      console.log(list[0]);
+
+      // Group Selector or Selector List - Can select multiple element separated by comma
+      // syntax:- ('tag_name1, tag_name2, tag_name_n')
+      var list1 = document.querySelectorAll("div, p");
+      console.log(list1);
+
+      // Universal Selector - It will retrieve all elements inside.
+      // syntax:- ('*')
+      var list2 = document.querySelectorAll("*");
+      console.log(list2);
+
+      // Class Selector/ Style Class
+
+      // Universal Style Class - Select All Elements which contains the specified class name
+      // Syntax: - ('.class_name')
+      // game, game super, super game
+      var list3 = document.querySelectorAll(".game");
+      console.log(list3);
+
+      // Element Specific Style Class - Select All specific Elements which contains the specified class name
+      // Syntax:- ('tag_name.class_name')
+      var list4 = document.querySelectorAll("p.red");
+      console.log(list4);
+
+      // more specific - p should contain both red and black
+      // syntax:- ('tag_name.class_name1.class_name2')
+      var list5 = document.querySelectorAll("p.red.black");
+      console.log(list5);
+
+      // ID Selector - Select Element which contain is the specified ID Name
+      // syntax:- ('#ID_Name')
+      var list6 = document.querySelectorAll("#book");
+      console.log(list6);
+
+      // more specific - Select Specified element which contains specified ID Name
+      // syntax:- ('tag_name#ID_Name')
+      var list7 = document.querySelectorAll("p#book");
+      console.log(list7);
+
+      // Attribute Selector -
+      // Select element with their attribute
+      // syntax:- ('tag_name[attribute_name]')
+      var list8 = document.querySelectorAll("p[title]");
+      console.log(list8);
+
+      // Select element with their attribute and value
+      // syntax:- ('tag_name[attribute_name = "value"]')
+      var list9 = document.querySelectorAll('p[title = "mypara1"]');
+      console.log(list9);
+
+      // Select Element with their multiple attribute and value
+      // syntax:- ('tag_name[attribute_name1 = "value1"][attribute_name2 = "value2"]')
+      // both attribute and value pair must be true
+      var list10 = document.querySelectorAll(
+        'img[width = "30%"][height = "20%"]'
+      );
+      console.log(list10);
+
+      // Select Element using an attribute value containing a specified word
+      // syntax: - ('[attribute ~= "value"]')
+      var list11 = document.querySelectorAll('[class ~="game"]');
+      console.log(list11);
+
+      // Select Element using with the specified attribute starting with the specified value
+      // syntax:- ('[attribute |= "value"]')
+      // The value must be a whole word - game or game-super
+      var list12 = document.querySelectorAll('[class |="game"]');
+      console.log(list12);
+
+      // Select Element whose attribute value begins with a specified value
+      // syntax:- ('[attribute ^= "value"]')
+      // It is not neccessary that the value should be a whole word - game, game-super, gamesuper, game super
+      var list13 = document.querySelectorAll('[class ^="game"]');
+      console.log(list13);
+
+      // Select Element whose attribute value ends with a specified value
+      // syntax:- ('[attribute $="value"]')
+      // It is not necessary that the value should be a whole word - game, supergame, super-game, super game
+      var list14 = document.querySelectorAll('[class $="game"]');
+      console.log(list14);
+
+      // Select Element whose attribute value contains a specified value
+      // syntax:- ('[attribute *="value"]')
+      var list15 = document.querySelectorAll('[class *="ga"]');
+      console.log(list15);
+
+      // Pseduo Classes
+      // first-child
+      // syntax:- ('tag_name:first-child')
+      // syntax:- (':first-child')	it will look each element's first child
+      var list16 = document.querySelectorAll("li:first-child");
+      console.log(list16);
+
+      // last-child
+      // syntax:- ('tag_name:last-child')
+      // syntax:- (':first-child')	it will look each element's last child
+      var list17 = document.querySelectorAll("li:last-child");
+      console.log(list17);
+
+      // nth Child
+      // syntax- ('tag_name:nth-child(index)')
+      // syntax- ('tag_name:nth-child(even)')
+      // syntax- ('tag_name:nth-child(odd)')
+      // syntax- ('tag_name:nth-child(formula)')
+      var list18 = document.querySelectorAll("li:nth-child(1)");
+      console.log(list18);
+
+      // nth-last-child
+      // syntax- ('tag_name:nth-last-child(index)')
+      // syntax- ('tag_name:nth-last-child(even)')
+      // syntax- ('tag_name:nth-last-child(odd)')
+      // syntax- ('tag_name:nth-last-child(formula)')
+      var list19 = document.querySelectorAll("li:nth-last-child(1)");
+      console.log(list19);
+
+      // empty pesudo
+      // syntax: (':empty')
+      // syntax: ('tag_name:empty')
+      var list20 = document.querySelectorAll(":empty");
+      console.log(list20);
+    </script>
+  </body>
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
