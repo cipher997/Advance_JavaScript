@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Kartik Gaikwad codes</title>
+</head>
+
+<body>
+		<table border="1" id="mytab">
+				<caption>My Table Caption</caption>
+				<thead>
+						<tr>
+								<th>ID</th>
+								<th>Name</th>
+								<th>Course</th>
+						</tr>
+				</thead>
+				<tbody id="mytbody">
+						<tr>
+								<td>11</td>
+								<td>Rahul</td>
+								<td>JavaScript</td>
+						</tr>
+						<tr>
+								<td>22</td>
+								<td>Sonam</td>
+								<td id="mytd">PHP</td>
+						</tr>
+				</tbody>
+				<tfoot>
+						<tr>
+							<td>55</td>
+							<td>Rohan</td>
+							<td>JSP</td>
+						</tr>
+				</tfoot>
+		</table>
+		
+	<script>
+		var mytable = document.getElementById("mytab");
+		var myrow = mytable.rows;
+		// it will return collection of rows
+		console.log(myrow);
+
+		// All TD and TH Length in the specified Row
+		console.log(myrow[0].cells.length);
+
+		// Accessing Cells using index number
+		console.log(myrow[0].cells[0]);
+		console.log(myrow[0].cells[1]);
+
+		// Accessing Cells using item index
+		console.log(myrow[0].cells.item(0));
+		console.log(myrow[0].cells.item(1));
+
+		// Accessing Cells using NamedItem
+		console.log(myrow[2].cells.namedItem("mytd"));
+
+		// Accessing Cell Content
+		console.log(myrow[0].cells[0].innerHTML);
+		console.log(myrow[0].cells[1].innerHTML);
+
+		// Modifying Cell content
+		myrow[1].cells[1].innerHTML = "GeekyShows";
+
+
+	</script>
+</body>
+
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
