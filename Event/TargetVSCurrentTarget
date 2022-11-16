@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kartik Gaikwad Codes</title>
+    <style>
+      #one {
+        width: 400px;
+        height: 400px;
+        background-color: orange;
+      }
+
+      #two {
+        width: 300px;
+        height: 300px;
+        background-color: lightblue;
+      }
+
+      #three {
+        width: 200px;
+        height: 300px;
+        background-color: pink;
+      }
+
+      #four {
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Target vs CurrentTarget</h1>
+    <div id="one" data-name="1">
+      1
+      <div id="two" data-name="2">
+        2
+        <div id="three" data-name="3">
+          3
+          <div id="four" data-name="4">4</div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Bubbling Phase
+      document.getElementById("one").addEventListener(
+        "click",
+        function (e) {
+          console.log("1");
+          console.log("Target = " + e.target.dataset.name);
+          console.log("CurrentTarget = " + e.currentTarget.dataset.name);
+        },
+        false
+      );
+
+      document.getElementById("two").addEventListener(
+        "click",
+        function (e) {
+          console.log("2");
+          console.log("Target = " + e.target.dataset.name);
+          console.log("CurrentTarget = " + e.currentTarget.dataset.name);
+        },
+        false
+      );
+
+      document.getElementById("three").addEventListener(
+        "click",
+        function (e) {
+          console.log("3");
+          console.log("Target = " + e.target.dataset.name);
+          console.log("CurrentTarget = " + e.currentTarget.dataset.name);
+        },
+        false
+      );
+
+      document.getElementById("four").addEventListener(
+        "click",
+        function (e) {
+          console.log("4");
+          console.log("Target = " + e.target.dataset.name);
+          console.log("CurrentTarget = " + e.currentTarget.dataset.name);
+        },
+        false
+      );
+    </script>
+  </body>
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
