@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kartik Gaikwad Codes</title>
+  </head>
+
+  <body>
+    <h1>Mouse Event</h1>
+    <div id="one" style="width: 100px; height: 100px; background-color: red">
+      <div
+        id="two"
+        style="width: 60px; height: 60px; background-color: black"
+      ></div>
+    </div>
+
+    <script>
+      function div1(e) {
+        console.log(e.type);
+      }
+      function div2(e) {
+        console.log(e.type);
+      }
+
+      var divOne = document.getElementById("one");
+      var divTwo = document.getElementById("two");
+
+      divTwo.addEventListener("mousedown", div1, false);
+      divTwo.addEventListener("mouseup", div1, false);
+      divTwo.addEventListener("click", div1, false);
+      divTwo.addEventListener("dblclick", div1, false);
+      divTwo.addEventListener("mouseenter", div1, false);
+      divTwo.addEventListener("mouseleave", div1, false);
+      divTwo.addEventListener("mouseover", div1, false);
+      divTwo.addEventListener("mouseout", div1, false);
+      divTwo.addEventListener("mousemove", div1, false);
+      divTwo.addEventListener("contextmenu", div1, false);
+
+      /*
+		
+		divTwo.addEventListener("click", div2, false);
+		divOne.addEventListener("click", div1, false);
+
+		divTwo.addEventListener("dblclick", div2, false);
+		divOne.addEventListener("dblclick", div1, false);
+
+		divTwo.addEventListener("mousedown", div2, false);
+		divOne.addEventListener("mousedown", div1, false);
+
+		divTwo.addEventListener("mouseup", div2, false);
+		divOne.addEventListener("mouseup", div1, false);
+
+		divTwo.addEventListener("mouseenter", div2, false);		// No Bubble
+		divOne.addEventListener("mouseenter", div1, false);
+
+		divTwo.addEventListener("mouseleave", div2, false);		// No Bubble
+		divOne.addEventListener("mouseleave", div1, false);
+
+		divTwo.addEventListener("mouseover", div2, false);
+		divOne.addEventListener("mouseover", div1, false);
+
+		divTwo.addEventListener("mouseout", div2, false);
+		divOne.addEventListener("mouseout", div1, false);
+
+		divTwo.addEventListener("contextmenu", div2, false);
+		divOne.addEventListener("contextmenu", div1, false);
+		*/
+    </script>
+  </body>
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
