@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kartik Gaikwad Codes</title>
+  </head>
+
+  <body>
+    <h1>Focus and Blur</h1>
+    <button type="button" id="openbtn">Open Window</button>
+    <button type="button" id="focusbtn">Focus</button>
+    <button type="button" id="blurbtn">Blur</button>
+    <script>
+      var newWindow;
+
+      function openWin() {
+        newWindow = window.open("", "_blank", "width=300, height=200");
+      }
+      function focusWin() {
+        newWindow.focus();
+      }
+      function blurWin() {
+        newWindow.blur();
+      }
+      document.getElementById("openbtn").addEventListener("click", openWin);
+      document.getElementById("focusbtn").addEventListener("click", focusWin);
+      document.getElementById("blurbtn").addEventListener("click", blurWin);
+    </script>
+  </body>
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
