@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kartik Gaikwad Codes</title>
+  </head>
+
+  <body>
+    <form action="" name="myform" id="myformid">
+      Username: <input type="text" name="m_username_field" id="username_id" />
+      <br /><br />
+      Password:
+      <input
+        type="password"
+        name="m_password_field"
+        id="password_id"
+      /><br /><br />
+      <input type="button" name="m_sbtn" value="Reset" onclick="resetForm()" />
+    </form>
+    <script>
+      var myform = document.myform;
+      console.dir(myform);
+      console.log(myform.length);
+      console.log(myform.elements[1]);
+      console.log(myform.method);
+      console.log(myform.action);
+      function resetForm() {
+        myform.reset();
+      }
+    </script>
+  </body>
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
