@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kartik Gaikwad Codes</title>
+  </head>
+
+  <body>
+    <h1>Cookies</h1>
+    <form action="" name="myform" method="POST">
+      Name: <input type="text" name="name" /> <br /><br />
+      Email: <input type="email" name="email" /> <br /><br />
+      Language: <input type="text" name="lang" /><br /><br />
+      <input
+        type="button"
+        value="Set Cookies"
+        name="set"
+        onclick="setCookies()"
+      />
+      <input
+        type="button"
+        value="Get Cookies"
+        name="get"
+        onclick="getCookies()"
+      />
+    </form>
+    <script>
+      function setCookies() {
+        document.cookie =
+          "name=" +
+          document.myform.name.value +
+          "; max-age=" +
+          60 * 60 * 24 * 10;
+        document.cookie =
+          "email=" +
+          document.myform.email.value +
+          "; max-age=" +
+          60 * 60 * 24 * 10;
+        document.cookie =
+          "language=" +
+          document.myform.lang.value +
+          "; max-age=" +
+          60 * 60 * 24 * 10;
+      }
+      // name=rahul; email=rahul@gmail.com; language=hindi
+
+      function getCookies() {
+        var cookiesArray = document.cookie.split(";");
+        for (var i = 0; i < cookiesArray.length; i++) {
+          var valueArray = cookiesArray[i].split("=");
+          if (valueArray[0].trim() == "name") {
+            document.myform.name.value = valueArray[1];
+          } else if (valueArray[0].trim() == "email") {
+            document.myform.email.value = valueArray[1];
+          } else if (valueArray[0].trim() == "language") {
+            document.myform.lang.value = valueArray[1];
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
