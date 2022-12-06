@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Kartik Gaikwad Codes</title>
+  </head>
+
+  <body>
+    <h1>Exception Handling</h1>
+    <script>
+      function getRectArea(w, h) {
+        if (isNaN(w) || isNaN(h)) {
+          throw "Parameter is not a number!";
+        }
+      }
+
+      try {
+        getRectArea(10, "A");
+      } catch (e) {
+        document.write(e);
+      }
+      document.write("<br><br>I have no idea what going on above");
+    </script>
+  </body>
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
