@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kartik Gaikwad Codes</title>
+  </head>
+
+  <body>
+    <script>
+      // Problem with Syn
+      // console.log("Start")
+      // function getName(name) {
+      //   setTimeout(() => {
+      //     console.log("Inside setTimeOut")
+      //     return name;
+      //   }, 2000);
+      // }
+      // const nm = getName('Sonam')
+      // console.log(nm)
+      // console.log("End")
+
+      // Solve Above problem with Callback
+      // console.log("Start")
+      // function getName(name, callback) {
+      //   setTimeout(() => {
+      //     console.log("Inside setTimeOut")
+      //     callback(name);
+      //   }, 2000);
+      // }
+      // const nm = getName('Sonam', (nm) => { console.log(nm) })
+
+      // console.log("End")
+
+      // Callback Hell
+      console.log("Start");
+      function getName(name, callback) {
+        setTimeout(() => {
+          console.log("Inside Name setTimeOut");
+          callback(name);
+        }, 2000);
+      }
+
+      function getHobbies(name, callback) {
+        setTimeout(() => {
+          console.log("Inside Hobbies setTimeOut");
+          callback(["Cricket", "Reading", "Dancing"]);
+        }, 1000);
+      }
+
+      const nm = getName("Sonam", (nm) => {
+        console.log(nm);
+        getHobbies(nm, (hobby) => {
+          console.log(hobby);
+        });
+      });
+
+      console.log("End");
+    </script>
+  </body>
+</html>
+
+<!-- These codes are created, for those who have immense interest in coding and
+programming as me.. everything is open to you people out there on my personal Github
+account (https://github.com/cipher997) for better understanding of advanced javascript in
+terms of my personal understandings and learnings. If you have any doubts please feel free to
+connect me (email-id:kartik97gaikwad@gmail.com) regarding general coding
+informational purposes! -->
